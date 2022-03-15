@@ -5,7 +5,7 @@ const api = require('./src/api.js')
  * @param {string} cripto
  * @param {}  description
  */
-class Get {
+class getCoin{
   constructor(coin) {
     this.coin = coin
   }
