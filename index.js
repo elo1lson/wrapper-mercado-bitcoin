@@ -4,6 +4,10 @@
 const validator = require('./src/type.js')
 
 function coin(arg) {
+  if(!arg){
+    throw new Error('No param as provided!')
+  }
+  arg.toUpperCase()
   if (!validator.includes(arg)) {
     throw new Error(arg + ' is not a valid param!')
   }
@@ -18,3 +22,4 @@ function coin(arg) {
   }
 } 
 module.exports = coin
+  
